@@ -1,0 +1,43 @@
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		min-width: 320px;
+		overflow-x: hidden;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	button,
+	a,
+	input,
+	select,
+	textarea {
+		-webkit-tap-highlight-color: transparent;
+	}
+}
+
+@media (max-width: 640px) {
+	.hero-title {
+		font-size: clamp(2.75rem, 13vw, 4rem);
+	}
+
+	.hero-stats {
+		gap: 1.25rem;
+	}
+
+	.hero-stats > div {
+		min-width: 0;
+	}
+
+	.hero-stats > div > div:first-child {
+		font-size: 1.35rem;
+	}
+}
+
+@media (hover: none) {
+	.group .group-hover\\:translate-y-0 {
+		transform: translateY(0);
+	}
+}
